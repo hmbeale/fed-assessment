@@ -4,6 +4,8 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 
 import ButtonAppBar from './buttonAppBar.js'
+import ImgCard from './imgCard.js'
+import MediaCard from './mediaCard.js'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -39,40 +41,82 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}>text</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}>img</Paper>
+          <ImgCard />
         </Grid>
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
 
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
         <Grid item xs={8}>
           <Paper className={classes.paper}>xs=8</Paper>
         </Grid>
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
 
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
         <Grid item xs={8}>
-          <Paper className={classes.paper}>xs=8</Paper>
+          <Paper className={classes.paper}>radio</Paper>
         </Grid>
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
 
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
-        </Grid>
-        <Grid item xs={8}>
-          <Paper className={classes.paper}>xs=8</Paper>
+          <Paper className={classes.paper}></Paper>
         </Grid>
         <Grid item xs={2}>
-          <Paper className={classes.paper}>xs=2 col</Paper>
+          <MediaCard />
+        </Grid>
+        <Grid item xs={2}>
+        <MediaCard />
+        </Grid>
+        <Grid item xs={2}>
+        <MediaCard />
+        </Grid>
+        <Grid item xs={2}>
+        <MediaCard />
+        </Grid>
+        
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>text</Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={4}>
+          <Paper className={classes.paper}>text</Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={2}>
+          <Paper className={classes.paper}></Paper>
         </Grid>
       </Grid>
     </div>
