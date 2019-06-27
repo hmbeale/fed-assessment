@@ -16,6 +16,10 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+  radioGrid: {
+    alignItems: 'right',
+    alignContent: 'right'
+  }
 }));
 
 export default function FullWidthGrid() {
@@ -60,7 +64,7 @@ export default function FullWidthGrid() {
         <Grid item xs={2}>
           <Paper className={classes.paper}></Paper>
         </Grid>
-        <Grid item xs={8}>
+        <Grid item xs={8} className={classes.radioGrid}> 
           <Paper className={classes.paper}>radio</Paper>
         </Grid>
         <Grid item xs={2}>
@@ -109,7 +113,16 @@ export default function FullWidthGrid() {
         <Grid item xs={2}>
           <Paper className={classes.paper}></Paper>
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={1}>
+          <Paper className={classes.paper}>text</Paper>
+        </Grid>
+        <Grid item xs={1}>
+          <Paper className={classes.paper}>text</Paper>
+        </Grid>
+        <Grid item xs={1}>
+          <Paper className={classes.paper}>text</Paper>
+        </Grid>
+        <Grid item xs={1}>
           <Paper className={classes.paper}>text</Paper>
         </Grid>
         <Grid item xs={2}>
@@ -118,6 +131,11 @@ export default function FullWidthGrid() {
         <Grid item xs={2}>
           <Paper className={classes.paper}></Paper>
         </Grid>
+
+        <Grid item xs={12}>
+          <Paper className={classes.paper}> text </Paper>
+        </Grid>
+
       </Grid>
     </div>
   );
