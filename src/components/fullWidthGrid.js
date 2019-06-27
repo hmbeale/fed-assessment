@@ -64,7 +64,10 @@ export default function FullWidthGrid() {
         <Grid item xs={2}>
           <Paper className={classes.paper}></Paper>
         </Grid>
-        <Grid item xs={8} className={classes.radioGrid}> 
+        <Grid item xs={6} > 
+          <Paper className={classes.paper}></Paper>
+        </Grid>
+        <Grid item xs={2} > 
           <Paper className={classes.paper}>radio</Paper>
         </Grid>
         <Grid item xs={2}>
@@ -116,10 +119,7 @@ export default function FullWidthGrid() {
         <Grid item xs={1}>
           <Paper className={classes.paper}>text</Paper>
         </Grid>
-        <Grid item xs={1}>
-          <Paper className={classes.paper}>text</Paper>
-        </Grid>
-        <Grid item xs={1}>
+        <Grid item xs={2}>
           <Paper className={classes.paper}>text</Paper>
         </Grid>
         <Grid item xs={1}>
