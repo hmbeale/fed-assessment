@@ -8,6 +8,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 const useStyles = makeStyles({
   card: {
     maxWidth: 345,
@@ -17,17 +18,31 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgCard() {
+export default function Card2() {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
+      <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={require('../images/random-mountain-pic.jpg')}
+          image={require('../images/birds.png')}
           title="Contemplative Reptile"
         />
- 
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            This is card2
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          Some birds have membranes that cover their eyes like goggles, enabling them to see while traveling at high speeds.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+        Click & go!
+        </Button>
+      </CardActions>
     </Card>
   );
 }

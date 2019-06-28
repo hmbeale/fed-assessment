@@ -9,9 +9,12 @@ import SimpleMenu1 from './menu1.js'
 import SimpleMenu2 from './menu2.js'
 import SimpleMenu3 from './menu3.js'
 
+import Box from '@material-ui/core/Box';
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
+    
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -20,6 +23,9 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     textAlign: 'left'
   },
+  toolbar: {
+    backgroundColor: '#147693',
+  }
 }));
 
 export default function ButtonAppBar() {
@@ -27,16 +33,16 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
+      
+        <Toolbar className={classes.toolbar}>
           <Typography variant="h6" className={classes.title}>
-            text
+            Example Page
           </Typography>
           <SimpleMenu1 />
           <SimpleMenu2 />
           <SimpleMenu3 />
         </Toolbar>
-      </AppBar>
+      
     </div>
   );
 }

@@ -17,17 +17,31 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgCard() {
+export default function Card3() {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
+      <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={require('../images/random-mountain-pic.jpg')}
+          image={require('../images/cat.png')}
           title="Contemplative Reptile"
         />
- 
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+          This is card3
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          The cheetah is the only cat that can't retract its claws.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+        Click & go!
+        </Button>
+      </CardActions>
     </Card>
   );
 }

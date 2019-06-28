@@ -17,17 +17,31 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ImgCard() {
+export default function Card1() {
   const classes = useStyles();
 
   return (
     <Card className={classes.card}>
+      <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={require('../images/random-mountain-pic.jpg')}
+          image={require('../images/cat.png')}
           title="Contemplative Reptile"
         />
- 
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+          This is card1
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+          Cats use thier whiskers to determine space between objects in the dark.
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+        Click & go!
+        </Button>
+      </CardActions>
     </Card>
   );
 }
