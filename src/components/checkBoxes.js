@@ -6,6 +6,9 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles(theme => ({
   title: {
     color: 'white'
+  },
+  checkBox: {
+    display: 'flex'
   }
 }));
 
@@ -23,9 +26,9 @@ export default function Checkboxes() {
 
   return (
       
-    <div>
+    <div className={classes.checkBox}>
       <Typography variant="h6" className={classes.title}>
-            I want to see:
+            I want to see: 
           </Typography>
           <Typography variant="h6" className={classes.title}>
             Birds
@@ -43,7 +46,9 @@ export default function Checkboxes() {
         value="checkedC"
         inputProps={{
           'aria-label': 'uncontrolled-checkbox',
+          
         }}
+        
       />
     </div>
   );
