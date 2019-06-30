@@ -3,10 +3,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import TopMenuBar from './topMenuBar.js'
 import Banner from './banner.js'
-import Row3 from './row3.js'
-import Row4 from './row4.js'
-import Row5 from './row5.js'
-import Row6 from './row6.js'
+import CardsDescription from './cardsDescription.js'
+import CheckboxGroup from './checkboxGroup.js'
+import CardGroup from './cardGroup.js'
+import BlockText from './blockText.js'
 import Trifold from './trifold.js'
 import Footer from './footer.js'
 
@@ -42,10 +42,10 @@ export default function FullWidthGrid() {
     <div className={classes.root}>
       <TopMenuBar />
       <Banner />
-      <Row3 />
-      <Row4 />
-      <Row5 />
-      <Row6 />
+      <CardsDescription />
+      <CheckboxGroup />
+      <CardGroup />
+      <BlockText />
       <Trifold />
       <Footer />
 

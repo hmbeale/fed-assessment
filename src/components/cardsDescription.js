@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Row3() {
+export default function CardsDescription() {
   const classes = useStyles();
 
   return (

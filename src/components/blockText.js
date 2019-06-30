@@ -11,10 +11,15 @@ const useStyles = makeStyles(theme => ({
   g6Text: {
     textAlign: "left",
     color: "#147693"
+  },
+  title : {
+    textAlign: "left",
+    fontSize: '20px',
+    color: "#147693"
   }
 }));
 
-export default function Row6() {
+export default function BlockText() {
   const classes = useStyles();
 
   return (
@@ -24,21 +29,28 @@ export default function Row6() {
         <Box className={classes.sideCol}></Box>
       </Grid>
       <Grid item xs={12} sm = {6}>
-        <Typography className={classes.g6Text}>
+        <Typography className={classes.g6Text} className={classes.title}>
           Here is some constrained content
         </Typography>
+        <br></br>
         <Typography className={classes.g6Text}>
           Where the metal hits the meat player-coach but upsell so please use
           "solutionise" instead of solution ideas! :). Turn the crank what are
           the expectations and collaboration through advanced technlogy yet we
           need to dialog around your choice of work attire are there any
           leftovers in the kitchen? those options are already baked in with this
-          model, yet clear blue water. Products need full resourcing and support
+          model, yet clear blue water. 
+          <br></br>
+          <br></br>
+          Products need full resourcing and support
           from a cross-functional team in order to be built, maintained, and
           evolved quick-win or root-and-branch review. We need to get all
           stakeholders up to speed and in the right place nobody's fault it
           could have been managed better drink from the firehose we need to make
-          the new version clean and sexy crisp ppt. Net net mobile friendly.
+          the new version clean and sexy crisp ppt. 
+          <br></br>
+          <br></br>
+          Net net mobile friendly.
           Synergize productive mindfulness bench mark, loop back. Quick win
           synergize productive mindfulness nor hit the ground running yet when
           does this sunset?

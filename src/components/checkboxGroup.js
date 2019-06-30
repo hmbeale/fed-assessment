@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme => ({
       },
   }));
   
-  export default function Row4() {
+  export default function CheckboxGroup() {
     const classes = useStyles();
   
     return (

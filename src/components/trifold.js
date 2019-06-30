@@ -1,14 +1,11 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Divider from '@material-ui/core/Divider';
 
 import SideCol from "./sideCol.js";
-
 import SimpleList from "./simpleList.js";
 import ImgCard2 from './imgCard2.js'
 
@@ -18,8 +15,18 @@ const useStyles = makeStyles(theme => ({
   },
   grid5_1: {
     backgroundColor: "#147693"
+  },
+  typography: {
+    textAlign: "left",
+    color: "#147693"
+  },
+  title: {
+    textAlign: "left",
+    fontSize: '20px',
+    color: "#147693"
   }
 }));
+
 
 export default function Trifold() {
   const classes = useStyles();
@@ -27,32 +34,43 @@ export default function Trifold() {
   return (
     <Grid container spacing={3} className={classes.grid7}>
       <SideCol />
-      <Grid item xs={12} sm={2}>
+      <Grid item xs={12} sm = {1}>
         <Box className={classes.sideCol}></Box>
       </Grid>
-      <Grid item xs={12} sm={1}>
+
+      
+      <Grid item xs={12} sm={2}>
+        <Divider />
         <SimpleList />
       </Grid>
+      
       <Grid item xs={12} sm={2}>
       <Divider />
-        <Typography className={classes.paper}>Have you heard</Typography>
-        <Typography className={classes.paper}>
+        <Typography className = {classes.typography} className = {classes.title}>Have you heard</Typography>
+        <br></br>
+        <Typography className = {classes.typography}>
           There was a duck at a store. He ate for free. I should have ordered
           him more expensive food! The lesson here is DUCKS EAT FOR FREE at that
           restaurant.
         </Typography>
       </Grid>
+      
       <Grid item xs={12} sm={1}>
       <Divider />
-        <Typography className={classes.paper}>
+        <Typography className = {classes.typography}>
           picture of some things
         </Typography>
       </Grid>
-      <Grid item xs={12} sm={2}>
-        <Box className={classes.sideCol}>
+
+      <Grid item xs={12} sm={1}>
+      <Divider />
           <ImgCard2 />
-        </Box>
       </Grid>
+
+      <Grid item xs={12} sm = {1}>
+        <Box className={classes.sideCol}></Box>
+      </Grid>
+
       <SideCol />
     </Grid>
   );

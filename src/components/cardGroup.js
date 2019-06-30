@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
       },
   }));
   
-  export default function Row5() {
+  export default function CardGroup() {
     const classes = useStyles();
   
     return (

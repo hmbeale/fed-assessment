@@ -13,6 +13,9 @@ const useStyles = makeStyles(theme => ({
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
   },
+  listItemText : {
+    color: "#147693"
+  }
 }));
 
 function ListItemLink(props) {
@@ -26,21 +29,20 @@ export default function SimpleList() {
     <div className={classes.root}>
          
       <List component="nav" aria-label="Secondary mailbox folders">
-      <Divider />
         <ListItem>
-          <ListItemText primary="Thing 1" />
+          <ListItemText primary="Thing 1" className = {classes.listItemText} />
         </ListItem>
         <ListItem>
-          <ListItemText primary="Another thing" />
+          <ListItemText primary="Another thing" className = {classes.listItemText}/>
         </ListItem>
         <ListItem>
-          <ListItemText primary="THE thing" />
+          <ListItemText primary="THE thing" className = {classes.listItemText}/>
         </ListItem>
         <ListItem>
-          <ListItemText primary="Thingamabob" />
+          <ListItemText primary="Thingamabob" className = {classes.listItemText}/>
         </ListItem>
         <ListItem>
-          <ListItemText primary="Thingles" />
+          <ListItemText primary="Thingles" className = {classes.listItemText}/>
         </ListItem>
         
       </List>
