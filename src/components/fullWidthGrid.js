@@ -7,7 +7,7 @@ import Row3 from './row3.js'
 import Row4 from './row4.js'
 import Row5 from './row5.js'
 import Row6 from './row6.js'
-import Row7 from './row7.js'
+import Trifold from './trifold.js'
 import Footer from './footer.js'
 
 const useStyles = makeStyles(theme => ({
@@ -46,7 +46,7 @@ export default function FullWidthGrid() {
       <Row4 />
       <Row5 />
       <Row6 />
-      <Row7 />
+      <Trifold />
       <Footer />
 
     </div>
