@@ -17,7 +17,8 @@ const useStyles = makeStyles({
   },
   typography: {
     fontSize: '20px',
-    color: "#147693"
+    color: "#147693",
+    textTransform: 'none'
   },
   button: {
     margin: 'auto'
@@ -47,7 +48,7 @@ export default function Card1() {
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary" className={classes.button}>
-        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
+        <Typography className={classes.typography}>
           Click & go!
           </Typography>
         </Button>

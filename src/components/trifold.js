@@ -24,6 +24,9 @@ const useStyles = makeStyles(theme => ({
     textAlign: "left",
     fontSize: '20px',
     color: "#147693"
+  },
+  divider: {
+    color: "#147693"
   }
 }));
 
@@ -40,12 +43,12 @@ export default function Trifold() {
 
       
       <Grid item xs={12} sm={2}>
-        <Divider />
+        <Divider className = {classes.divider}/>
         <SimpleList />
       </Grid>
       
       <Grid item xs={12} sm={2}>
-      <Divider />
+      <Divider className = {classes.divider}/>
         <Typography className = {classes.typography} className = {classes.title}>Have you heard</Typography>
         <br></br>
         <Typography className = {classes.typography}>
@@ -62,7 +65,7 @@ export default function Trifold() {
       </Grid>
       
       <Grid item xs={12} sm={2}>
-      <Divider />
+      <Divider className = {classes.divider}/>
         <Typography className = {classes.typography} className = {classes.title}>
           Picture of some things
         </Typography>

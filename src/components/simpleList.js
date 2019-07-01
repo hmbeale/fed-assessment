@@ -21,6 +21,9 @@ const useStyles = makeStyles(theme => ({
     textAlign: "left",
     fontSize: '20px',
     color: "#147693"
+  },
+  list: {
+    listStyle: 'circle'
   }
 }));
 
@@ -36,7 +39,7 @@ export default function SimpleList() {
       <Typography className = {classes.typography} className = {classes.title}>
           List of Things
         </Typography>   
-      <List component="nav" aria-label="Secondary mailbox folders">
+      <List component="nav" aria-label="Secondary mailbox folders" className = {classes.list}>
         <ListItem>
           <ListItemText primary="Thing 1" className = {classes.listItemText} />
         </ListItem>

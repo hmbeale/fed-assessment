@@ -18,7 +18,8 @@ const useStyles = makeStyles({
   },
   typography: {
     fontSize: '20px',
-    color: "#147693"
+    color: "#147693",
+    textTransform: 'none'
   },
   button: {
     margin: 'auto'
