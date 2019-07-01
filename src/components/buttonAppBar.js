@@ -22,7 +22,8 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
     textAlign: 'left',
-    color: 'white'
+    color: 'white',
+    fontFamily: 'Open Sans'
   },
   toolbar: {
     backgroundColor: '#147693',

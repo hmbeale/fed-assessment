@@ -44,6 +44,8 @@ export default function Trifold() {
       
       <Grid item xs={12} sm={2}>
         <Divider className = {classes.divider}/>
+        <Typography className = {classes.typography} className = {classes.title}>List of things</Typography>
+        <br></br>
         <SimpleList />
       </Grid>
       

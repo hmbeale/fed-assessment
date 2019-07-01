@@ -12,13 +12,15 @@ const useStyles = makeStyles(theme => ({
   grid2: {},
   title: {
     textAlign: "left",
-    color: "orange",
-    fontSize: '35px' 
+    color: '#DC4105',
+    fontSize: '40px',
+    fontFamily: 'Passion One'
   },
   subtitle: {
     textAlign: "left",
     color: "#147693",
-    fontSize: '20px'
+    fontSize: '20px',
+    fontFamily: 'Open Sans'
   },
   sideCol: {
     color: "#1A9EC5",

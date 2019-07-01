@@ -16,9 +16,10 @@ const useStyles = makeStyles({
     height: 140,
   },
   typography: {
-    fontSize: '20px',
+    //fontSize: '20px',
     color: "#147693",
-    textTransform: 'none'
+    textTransform: 'none',
+    fontFamily: 'Open Sans'
   },
   button: {
     margin: 'auto'
