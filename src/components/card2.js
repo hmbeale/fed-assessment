@@ -16,6 +16,15 @@ const useStyles = makeStyles({
   media: {
     height: 140,
   },
+  typography: {
+    fontSize: '20px',
+    color: "#147693"
+  },
+  button: {
+    margin: 'auto'
+  }
+  
+  
 });
 
 export default function Card2() {
@@ -30,17 +39,19 @@ export default function Card2() {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.typography}>
             This is card2
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
           Some birds have membranes that cover their eyes like goggles, enabling them to see while traveling at high speeds.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-        Click & go!
+        <Button size="small" color="primary" className={classes.button}>
+        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
+          Click & go!
+          </Typography>
         </Button>
       </CardActions>
     </Card>

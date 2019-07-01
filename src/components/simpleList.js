@@ -5,6 +5,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import Typography from "@material-ui/core/Typography";
 
 
 const useStyles = makeStyles(theme => ({
@@ -14,6 +15,11 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.background.paper,
   },
   listItemText : {
+    color: "#147693"
+  },
+  title: {
+    textAlign: "left",
+    fontSize: '20px',
     color: "#147693"
   }
 }));
@@ -27,7 +33,9 @@ export default function SimpleList() {
 
   return (
     <div className={classes.root}>
-         
+      <Typography className = {classes.typography} className = {classes.title}>
+          List of Things
+        </Typography>   
       <List component="nav" aria-label="Secondary mailbox folders">
         <ListItem>
           <ListItemText primary="Thing 1" className = {classes.listItemText} />

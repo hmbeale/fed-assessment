@@ -15,6 +15,13 @@ const useStyles = makeStyles({
   media: {
     height: 140,
   },
+  typography: {
+    fontSize: '20px',
+    color: "#147693"
+  },
+  button: {
+    margin: 'auto'
+  }
 });
 
 export default function Card1() {
@@ -29,17 +36,20 @@ export default function Card1() {
           title="Contemplative Reptile"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h5" component="h2" className={classes.typography}>
           This is card1
           </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
+          <br></br>
+          <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
           Cats use thier whiskers to determine space between objects in the dark.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-        Click & go!
+        <Button size="small" color="primary" className={classes.button}>
+        <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
+          Click & go!
+          </Typography>
         </Button>
       </CardActions>
     </Card>

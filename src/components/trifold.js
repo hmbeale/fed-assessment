@@ -49,22 +49,30 @@ export default function Trifold() {
         <Typography className = {classes.typography} className = {classes.title}>Have you heard</Typography>
         <br></br>
         <Typography className = {classes.typography}>
-          There was a duck at a store. He ate for free. I should have ordered
-          him more expensive food! The lesson here is DUCKS EAT FOR FREE at that
+          There was a duck at a store. 
+          <br></br>
+          <br></br>
+          He ate for free. I should have ordered
+          him more expensive food! 
+          <br></br>
+          <br></br>
+          The lesson here is DUCKS EAT FOR FREE at that
           restaurant.
         </Typography>
       </Grid>
       
-      <Grid item xs={12} sm={1}>
+      <Grid item xs={12} sm={2}>
       <Divider />
-        <Typography className = {classes.typography}>
-          picture of some things
+        <Typography className = {classes.typography} className = {classes.title}>
+          Picture of some things
         </Typography>
-      </Grid>
-
-      <Grid item xs={12} sm={1}>
-      <Divider />
-          <ImgCard2 />
+        <br></br>
+        <ImgCard2 />
+        <Typography className = {classes.typography}>
+        These guys are pretty coo’. 
+        Thing one and thing 2. 
+        You'll like what they do. Such fun from so few!
+          </Typography>
       </Grid>
 
       <Grid item xs={12} sm = {1}>

@@ -8,6 +8,9 @@ import Box from "@material-ui/core/Box";
 import SideCol from "./sideCol.js";
 
 const useStyles = makeStyles(theme => ({
+  grid6: {
+    marginTop: '20px',
+  },
   g6Text: {
     textAlign: "left",
     color: "#147693"
