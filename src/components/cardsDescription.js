@@ -36,7 +36,8 @@ const useStyles = makeStyles(theme => ({
   },
   otherText: {
     color: "white",
-    display: 'flex'
+    display: 'flex',
+    textAlign: 'left'
   }
 }));
 

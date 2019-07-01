@@ -8,6 +8,7 @@ import Divider from '@material-ui/core/Divider';
 import SideCol from "./sideCol.js";
 import SimpleList from "./simpleList.js";
 import ImgCard2 from './imgCard2.js'
+import ThingSubdivide from './thingSubdivide.js'
 
 const useStyles = makeStyles(theme => ({
   grid5: {
@@ -72,12 +73,7 @@ export default function Trifold() {
           Picture of some things
         </Typography>
         <br></br>
-        <ImgCard2 />
-        <Typography className = {classes.typography}>
-        These guys are pretty coo’. 
-        Thing one and thing 2. 
-        You'll like what they do. Such fun from so few!
-          </Typography>
+        <ThingSubdivide />
       </Grid>
 
       <Grid item xs={12} sm = {1}>
