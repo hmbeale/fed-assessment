@@ -13,12 +13,16 @@ const useStyles = makeStyles(theme => ({
   },
   g6Text: {
     textAlign: "left",
-    color: "#147693"
+    color: "#147693",
+    fontFamily: 'Open Sans'
   },
   title : {
     textAlign: "left",
     fontSize: '20px',
-    color: "#147693"
+    color: "#147693",
+    fontWeight: 'bold',
+    fontFamily: 'Open Sans'
+
   }
 }));
 

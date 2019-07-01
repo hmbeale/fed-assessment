@@ -13,13 +13,15 @@ const useStyles = makeStyles(theme => ({
   title: {
     textAlign: "left",
     color: '#DC4105',
-    fontSize: '40px',
-    fontFamily: 'Passion One'
+    fontSize: '30px',
+    fontFamily: 'Passion One',
+    //textShadow: '0px 0px #FFFFFF',
+    textShadow: '1px 1px #FFFFFF, 2px 2px #8f8f8f'
   },
   subtitle: {
     textAlign: "left",
     color: "#147693",
-    fontSize: '20px',
+    fontSize: '15px',
     fontFamily: 'Open Sans'
   },
   sideCol: {
