@@ -1,11 +1,14 @@
+My Front End Developer assessment. This is a pretty basic application, just need to install the files in this repository and some dependencies, then you're good to deploy. 
 
-In the project directory, you can run:
+```
+git clone https://github.com/hmbeale/fed-assessment
+```
 
-### `npm start`
+```
+npm install
+```
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+```
+npm start
+```
 
