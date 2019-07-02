@@ -8,12 +8,16 @@ import ButtonAppBar from "./buttonAppBar.js";
 import SideCol from './sideCol.js'
 
 const useStyles = makeStyles(theme => ({
-    grid1: {
+    container: {
         backgroundColor: '#147693',
+        padding: '0px'
       },
       sideCol: {
         color: '#1A9EC5'
       },
+      item: {
+        
+      }
   }));
   
   export default function TopMenuBar() {
@@ -22,9 +26,9 @@ const useStyles = makeStyles(theme => ({
     return (
       
 
-<Grid container spacing={3} className={classes.grid1}>
+<Grid container spacing={3} className={classes.container}>
         <SideCol />
-        <Grid item xs={12} sm={8} direction="row">
+        <Grid item xs={12} sm={8} direction="row className={classes.item}">
           <ButtonAppBar />
         </Grid>
         <SideCol />

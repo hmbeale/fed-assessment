@@ -14,7 +14,6 @@ import Box from '@material-ui/core/Box';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -23,7 +22,7 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     textAlign: 'left',
     color: 'white',
-    fontFamily: 'Open Sans'
+    fontFamily: 'Open Sans',
   },
   toolbar: {
     backgroundColor: '#147693',

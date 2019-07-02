@@ -22,6 +22,9 @@ const useStyles = makeStyles({
   },
   button: {
     margin: 'auto'
+  },
+  cardContent: {
+    minHeight: '180px'
   }
 });
 
@@ -30,13 +33,13 @@ export default function Card3() {
 
   return (
     <Card className={classes.card}>
-      <CardActionArea>
+      
         <CardMedia
           className={classes.media}
           image={require('../images/cat.png')}
           title="Contemplative Reptile"
         />
-        <CardContent>
+        <CardContent className={classes.cardContent}>
           <Typography gutterBottom variant="h5" component="h2" className={classes.typography}>
           This is card3
           </Typography>
@@ -44,7 +47,7 @@ export default function Card3() {
           The cheetah is the only cat that can't retract its claws.
           </Typography>
         </CardContent>
-      </CardActionArea>
+      
       <CardActions>
         <Button size="small" color="primary" className={classes.button}> 
         <Typography variant="body2" color="textSecondary" component="p" className={classes.typography}>
