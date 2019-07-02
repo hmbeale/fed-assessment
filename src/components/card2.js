@@ -25,7 +25,7 @@ const useStyles = makeStyles({
     margin: 'auto'
   },
   cardContent: {
-    minHeight: '180px'
+    minHeight: '170px'
   }
   
   

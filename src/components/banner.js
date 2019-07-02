@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '40px',
     fontFamily: 'Passion One',
     //textShadow: '0px 0px #FFFFFF',
-    textShadow: '1px 1px #FFFFFF, 2px 2px #8f8f8f'
+    textShadow: '1px 1px #FFFFFF, 2px 2px #8f8f8f',
   },
   subtitle: {
     textAlign: "left",
