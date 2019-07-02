@@ -6,7 +6,7 @@ const useStyles = makeStyles(theme => ({
     //width: "100%",
     //maxWidth: 360,
     //backgroundColor: theme.palette.background.paper
-    textAlign: "left",
+    //textAlign: "left",
   },
   li: {
     color: "#147693",

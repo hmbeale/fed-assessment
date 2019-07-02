@@ -7,6 +7,7 @@ import ImgCard from "./imgCard.js";
 import Typography from "@material-ui/core/Typography";
 
 import SideCol from "./sideCol.js";
+import BannerImage from './bannerImage.js'
 
 const useStyles = makeStyles(theme => ({
   grid2: {},
@@ -47,7 +48,7 @@ export default function Banner() {
         </Typography>
       </Grid>
       <Grid item xs={12} sm={3}>
-        <ImgCard />
+        <BannerImage />
       </Grid>
       <SideCol />
     </Grid>

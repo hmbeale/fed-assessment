@@ -11,11 +11,8 @@ import ImgCard2 from './imgCard2.js'
 import ThingSubdivide from './thingSubdivide.js'
 
 const useStyles = makeStyles(theme => ({
-  grid5: {
-    backgroundColor: "#1A9EC5"
-  },
-  grid5_1: {
-    backgroundColor: "#147693"
+  grid7: {
+    marginBottom: '20px'
   },
   typography: {
     textAlign: "left",
@@ -27,7 +24,10 @@ const useStyles = makeStyles(theme => ({
     color: "#147693"
   },
   divider: {
-    color: "#147693"
+    color: "#147693",
+  },
+  subGrid1: {
+    alignItems: 'left'
   }
 }));
 
@@ -43,7 +43,7 @@ export default function Trifold() {
       </Grid>
 
       
-      <Grid item xs={12} sm={2}>
+      <Grid item xs={12} sm={2} className = {classes.subGrid1}>
         <Divider className = {classes.divider}/>
         <Typography className = {classes.typography} className = {classes.title}>List of things</Typography>
         <br></br>
